@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GameHub — игровой портал</title>
+    <meta name="description" content="Портал с играми, подборками и новинками" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="start-screen" class="start-screen">
+      <div class="start-panel reveal">
+        <p class="eyebrow">Arcade Hub</p>
+        <h1>Играй прямо в браузере — аркады, змейка и тетрис на одном сайте.</h1>
+        <p>
+          Эта страница подойдёт для GitHub проекта: яркий интерфейс, стартовая сцена и мини-игры,
+          в которые можно играть без установки.
+        </p>
+        <button id="start-button" class="btn btn-primary">Начать игру</button>
+      </div>
+    </div>
+
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+    <div class="bg-grid"></div>
+
+    <header class="topbar">
+      <a class="brand" href="#home">GameHub</a>
+      <nav class="nav-links">
+        <a href="#works">Игры</a>
+        <a href="#play">Игровая зона</a>
+        <a href="#services">Категории</a>
+        <a href="#about">О проекте</a>
+        <a href="#register">Регистрация</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Открыть меню">☰</button>
+    </header>
+
+    <div class="mobile-nav" aria-hidden="true">
+      <nav class="mobile-links">
+        <a href="#works">Игры</a>
+        <a href="#services">Категории</a>
+        <a href="#about">О проекте</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+      <a class="btn btn-primary" href="#works">Начать играть</a>
+    </div>
+
+    <main id="home">
+      <section class="hero">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Игровой портал</p>
+          <h1>Лучшие игры, подборки и идеи для геймеров.</h1>
+          <p class="hero-text">
+            Сборка аркад, головоломок и классики, которые можно открыть прямо сейчас.
+            Тетрис, змейка, аркады и мини-игры — всё в одном окне с рекордом и профилем игрока.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#works">Игры</a>
+            <a class="btn btn-secondary" href="#about">О проекте</a>
+          </div>
+          <div class="stats">
+            <div>
+              <strong data-count="27">0</strong>
+              <span>игр в каталоге</span>
+            </div>
+            <div>
+              <strong data-count="4">0</strong>
+              <span>категории</span>
+            </div>
+            <div>
+              <strong data-count="365">0</strong>
+              <span>дней игрового вдохновения</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-card reveal">
+          <div class="card-glow"></div>
+          <div class="card-top">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <div class="card-content">
+            <div class="mini-panel"></div>
+            <div class="mini-panel wide"></div>
+            <div class="mini-panel text-panel">
+              <span>Featured</span>
+              <strong>Arcade Nights</strong>
+            </div>
+            <div class="card-row">
+              <div class="mini-panel small"></div>
+              <div class="mini-panel small"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section reveal">
+        <div class="section-grid">
+          <div>
+            <span class="section-tag">О проекте</span>
+            <h2>GameHub — это коллекция игр для всех настроений.</h2>
+            <p>
+              Здесь собраны быстрые аркады, классические ретро-тайтлы и игры для ума.
+              Всё оформлено так, чтобы найти подходящую игру за пару кликов.
+            </p>
+          </div>
+          <div class="feature-list">
+            <article>
+              <strong>Быстрый выбор</strong>
+              <p>Каждая игра подписана и легко находится в каталоге.</p>
+            </article>
+            <article>
+              <strong>Для друзей и одиночек</strong>
+              <p>Аркады, соревновательные матчи и спокойные головоломки.</p>
+            </article>
+            <article>
+              <strong>Поддержка идей</strong>
+              <p>Хочешь добавить игру? Напиши нам, и мы расширим коллекцию.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="cards reveal">
+        <article class="card">
+          <h3>Аркады</h3>
+          <p>Моментальные забавы, которые подойдут для коротких перерывов.</p>
+        </article>
+        <article class="card">
+          <h3>Головоломки</h3>
+          <p>Вызов для мозга: логика, стратегия и точность движений.</p>
+        </article>
+        <article class="card">
+          <h3>Ретро</h3>
+          <p>Любимые классические игры с ностальгическим настроением.</p>
+        </article>
+      </section>
+
+      <section id="works" class="section reveal">
+        <span class="section-tag">Каталог</span>
+        <h2>Популярные игры прямо на портале.</h2>
+        <p>Выбери своё приключение: простые аркады, головоломки и новые режимы без багов.</p>
+        <div class="portfolio-grid">
+          <article class="portfolio-card">
+            <div class="portfolio-preview preview-1"></div>
+            <h3>Тетрис</h3>
+            <p>Лови ритм падения фигур и очищай линии до рекорда.</p>
+          </article>
+          <article class="portfolio-card">
+            <div class="portfolio-preview preview-2"></div>
+            <h3>Змейка</h3>
+            <p>Развивайся по полю, собирай еду и не врезайся в хвост.</p>
+          </article>
+          <article class="portfolio-card">
+            <div class="portfolio-preview preview-3"></div>
+            <h3>Аркада</h3>
+            <p>Быстрые реакции и точные клики — вот твой путь к вершине.</p>
+          </article>
+          <article class="portfolio-card">
+            <div class="portfolio-preview preview-4"></div>
+            <h3>Мемо</h3>
+            <p>Мини-игра на память с яркими карточками и быстрыми матчами.</p>
+          </article>
+          <article class="portfolio-card">
+            <div class="portfolio-preview preview-5"></div>
+            <h3>Кликер</h3>
+            <p>Быстро кликай, набирай очки и побеждай по скорости.</p>
+          </article>
+          <article class="portfolio-card">
+            <div class="portfolio-preview preview-6"></div>
+            <h3>Угадай число</h3>
+            <p>Отгадывай число за минимум попыток и держи серию побед.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="play" class="section reveal">
+        <div class="section-grid game-hero">
+          <div>
+            <span class="section-tag">Игровая зона</span>
+            <h2>Тетрис, аркады, змейка, Мемо и новые игры в одном окне</h2>
+            <p>
+              Выбирай режим, набирай очки и сохраняй персональный рекорд. После регистрации
+              твой ник будет отображаться прямо на панели.
+            </p>
+            <div class="game-switcher" role="tablist">
+              <button class="game-btn active" data-game="tetris">Тетрис</button>
+              <button class="game-btn" data-game="snake">Змейка</button>
+              <button class="game-btn" data-game="arcade">Аркада</button>
+              <button class="game-btn" data-game="memory">Мемо</button>
+              <button class="game-btn" data-game="clicker">Кликер</button>
+              <button class="game-btn" data-game="guess">Угадай число</button>
+            </div>
+          </div>
+          <div class="game-shell">
+            <div class="hud">
+              <div class="hud-item">
+                <span>Игрок</span>
+                <strong id="player-name-display">Игрок</strong>
+              </div>
+              <div class="hud-item">
+                <span>Счёт</span>
+                <strong id="score-value">0</strong>
+              </div>
+              <div class="hud-item">
+                <span>Рекорд</span>
+                <strong id="record-value">0</strong>
+              </div>
+            </div>
+            <div id="game-stage" class="game-stage"></div>
+            <div class="game-actions">
+              <button id="game-restart" class="btn btn-secondary">Начать заново</button>
+              <p id="game-message" class="game-message">Выбери игру и начинай.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="register" class="section reveal">
+        <div class="register-card">
+          <span class="section-tag">Регистрация</span>
+          <h2>Сохрани свой профиль и следи за рекордом</h2>
+          <form id="register-form" class="register-form">
+            <input id="player-name-input" type="text" placeholder="Как тебя зовут?" required />
+            <input id="player-email-input" type="email" placeholder="Email" required />
+            <button type="submit" class="btn btn-primary">Сохранить</button>
+          </form>
+          <p id="register-message" class="register-message">Привет, новый игрок!</p>
+        </div>
+      </section>
+
+      <section class="testimonials reveal">
+        <div>
+          <span class="section-tag">Рейтинг</span>
+          <h2>Выбор игроков на каждый день.</h2>
+        </div>
+        <div class="testimonial-grid">
+          <article class="testimonial-card">
+            <p>«GameHub — идеальный портал для тех, кто любит игры без лишних вкладок.»</p>
+            <strong>Игрок Л</strong>
+          </article>
+          <article class="testimonial-card">
+            <p>«Нашёл здесь несколько классных аркад для вечернего отдыха.»</p>
+            <strong>Геймер K</strong>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section reveal">
+        <div class="contact-card">
+          <span class="section-tag">Контакты</span>
+          <h2>Хочешь добавить игру или идею?</h2>
+          <p>Напиши нам, и мы расширим GameHub новой игровой подборкой.</p>
+          <a class="btn btn-primary" href="mailto:gamehub@example.com">gamehub@example.com</a>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="support-card">
+          <div class="support-header">
+            <div>
+              <span class="section-tag">Поддержка</span>
+              <h2>Чат-бот помощник</h2>
+            </div>
+            <span class="support-status">Онлайн</span>
+          </div>
+          <div id="support-messages" class="support-messages" aria-live="polite"></div>
+          <div class="support-quick-replies">
+            <button class="support-quick-reply" type="button">Как играть?</button>
+            <button class="support-quick-reply" type="button">Есть баг?</button>
+            <button class="support-quick-reply" type="button">Как сохранить рекорд?</button>
+          </div>
+          <form id="support-form" class="support-form">
+            <input id="support-input" type="text" placeholder="Напиши вопрос поддержке" required />
+            <button type="submit" class="btn btn-primary">Отправить</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 GameHub. Игры без остановки.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
